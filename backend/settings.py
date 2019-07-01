@@ -24,7 +24,7 @@ SECRET_KEY = '6#^!76^ghtv&dw+*5@$%g8x2ws-*tyj_0+tnpums(w)50*a$gn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['movielib-app.herokuapp.com']
 
 # Application definition
 
