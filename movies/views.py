@@ -29,7 +29,7 @@ class MovieDetail(generics.RetrieveUpdateDestroyAPIView):
 class MoviesByUser(APIView):
     permission_classes = (permissions.AllowAny, )
 
-    def get(self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs):
         userId = request.data.get('userId')
         print(userId)
         user = User.objects.get(id=userId)
