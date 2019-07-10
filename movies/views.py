@@ -21,7 +21,7 @@ class ListAllMovies(generics.ListAPIView):
 
 
 class MovieDetail(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.AllowAny,)
     serializer_class = MoviesSerializer
     queryset = Movie.objects.all()
 
