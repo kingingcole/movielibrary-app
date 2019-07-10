@@ -9,7 +9,7 @@ from rest_framework import status
 
 # Create your views here.
 class AddMovie(generics.CreateAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.AllowAny,)
     queryset = Movie.objects.all()
     serializer_class = MoviesSerializer
 
